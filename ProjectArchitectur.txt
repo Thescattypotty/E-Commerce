@@ -1,0 +1,20 @@
+
+Product : 
+    Id : Unique identifier 
+    NameOfProduct : String 
+    PageTitle : String 
+    Content : String 
+    Short Description : String 
+    FeaturedImageUrl : String 
+    UrlHandle : String 
+    PublishedDate : DateTime (Auto Generated on publish)
+    Visible : booleen (A product can be created but not published)
+    ListOfCategories : 1 or +
+
+Categorie : 
+    Id : Unique identifier
+    NameOfCategorie: String 
+    ListOFProduct : Product
+
+I will travel on a mega store , 
+so every product can go to many categories or subcategories

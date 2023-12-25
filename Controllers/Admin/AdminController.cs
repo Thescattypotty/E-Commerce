@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace E_Commerce.Controllers;
+namespace E_Commerce.Controllers.Admin;
 
 public class AdminController : Controller
 {

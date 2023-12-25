@@ -1,0 +1,638 @@
+@{
+    ViewData["Title"] = "Products";
+}
+
+<section id="page-banner" class="pt-200 pb-150 bg_cover" style="background-image: url(@ViewBag.BackgroundImage)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-banner-content">
+                        <h3>Shop Page</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== PAGE BANNER PART ENDS ======-->
+
+    <!--====== PRODUTCT PAGE PART START ======-->
+
+    <div id="produtct-part" class="pt-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="produtct-bar justify-content-lg-start justify-content-center pt-30">
+                        <div class="produtct">
+                            <p>View as :</p>
+                            <ul   class="nav" id="myTab" role="tablist">
+                               <li>
+                                   <a class="nav-item nav-link active" id="nav-grid-tab" data-toggle="tab" href="#nav-grid" role="tab" aria-controls="nav-grid" aria-selected="true">
+                                        <i class="fa fa-th-large"></i>
+                                    </a>
+                               </li>
+                               <li>
+                                   <a class="nav-item nav-link" id="nav-list-tab" data-toggle="tab" href="#nav-list" role="tab" aria-controls="nav-list" aria-selected="false">
+                                        <i class="fa fa-th-list"></i>
+                                    </a>
+                               </li>
+                            </ul>
+                        </div>
+                        <div class="produtct">
+                            <p>Sort by :</p>
+                            <select name="select">
+                                <option>Most Re..</option>
+                                <option>Laptop</option>
+                                <option>Ram</option>
+                                <option>cpu</option>
+                            </select>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="produtct">
+                            <p>Show :</p>
+                            <select name="select" id="number">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                            </select>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <nav class="produtct-next pt-30">
+                        <ul class="pagination justify-content-lg-end justify-content-center">
+                            <li><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                            <li><a class="page-link active" href="#">1</a></li>
+                            <li><a class="page-link" href="#">2</a></li>
+                            <li><a class="page-link" href="#">3</a></li>
+                            <li><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- produtct-bar -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-grid" role="tabpanel" aria-labelledby="nav-grid-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-1.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-2.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                            <div class="new-sele">
+                                                <a href="#">New</a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-3.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-2.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                            <div class="new-sele">
+                                                <a href="#">sele</a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-1.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                            <div class="new-sele">
+                                                <a href="#">New</a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-4.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-2.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                            <div class="new-sele">
+                                                <a href="#">sele</a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-4.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-1.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                            <div class="new-sele">
+                                                <a href="#">New</a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-4.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-2.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                            <div class="new-sele">
+                                                <a href="#">sele</a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="singel-products text-center mt-30">
+                                        <div class="products-image">
+                                            <img src="~/images/product/p-4.jpg" alt="Products">
+                                            <div class="products-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-contant">
+                                            <span>$259 <del>$215</del></span>
+                                            <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                            <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- products Grid-->
+                        
+                        <div class="tab-pane fade" id="nav-list" role="tabpanel" aria-labelledby="nav-list-tab">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-sm-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-1.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-4.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                    <div class="new-sele">
+                                                        <a href="#">sele</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-1.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                    <div class="new-sele">
+                                                        <a href="#">new</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-4.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-1.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-4.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                    <div class="new-sele">
+                                                        <a href="#">sele</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-1.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                    <div class="new-sele">
+                                                        <a href="#">sele</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-4.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-1.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="singel-products products-list text-center mt-30">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="products-image">
+                                                    <img src="~/images/product/p-4.jpg" alt="Products">
+                                                    <div class="products-cart">
+                                                        <a href="#"><i class="fa fa-shopping-cart"></i>Add to cart </a>
+                                                    </div>
+                                                    <div class="new-sele">
+                                                        <a href="#">new</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="products-contant">
+                                                    <span>$259 <del>$215</del></span>
+                                                    <a href="Product-Details.html"><h6>Mineral water big bottle</h6></a>
+                                                    <p>Mauris sed massa eu nulla mollis vehicula quis id tortor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRODUTCT PAGE PART ENDS ======-->
+
+    <!--====== BRAND PART START ======-->
+
+    <section id="brand-part" class="pt-70 pb-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2>Business Partners</h2>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>Nunc molestie mi nunc, nec accumsan libero dignissim sit amet. Fusce sit amet tincidunt metus. Nunc eu risus  suscipit massa dapibus blandit. Vivamus ac commodo eros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="brand-slied owl-carousel mt-45">
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/1.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/2.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/3.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/4.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/1.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/2.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/3.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/4.png" alt="Brand">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== BRAND PART ENDS ======-->
+
+    <!--====== DELIVERY PART START ======-->
+
+    <section id="delivery-part" class="bg_cover pt-110" data-overlay="8" style="background-image: url(@ViewBag.BackgroundImage2)">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="delivery-text text-center pb-30">
+                        <h2>Water Delivery 20 k.m. Free Service</h2>
+                        <p>Nunc molestie mi nunc, nec accumsan libero dignissim sit amet. Fusce sit amet tincidunt metus. Nunc eu risus suscipit massa dapibu.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="up-down text-center">
+                        <div class="up-down-box">
+                            <a href="#slider-part">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery-image d-none d-lg-block">
+            <img src="~/images/delivery-van.png" alt="Iamge">
+        </div>
+    </section>
+
+    <!--====== DELIVERY PART ENDS ======-->

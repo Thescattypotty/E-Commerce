@@ -2,21 +2,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.Controllers;
 
-public class AdminController : Controller
+public class BlogController : Controller
 {
-    private readonly ILogger<AdminController> _logger;
+    private readonly ILogger<BlogController> _logger;
 
-    public AdminController(ILogger<AdminController> logger)
+    public BlogController(ILogger<BlogController> logger)
     {
         _logger = logger;
     }
 
-    [HttpGet]
     public IActionResult Index()
     {
+        ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
+        ViewBag.BackgroundImage2 = Url.Content("~/images/bg-2.jpg");
         return View();
     }
-    
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

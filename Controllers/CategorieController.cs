@@ -1,22 +1,23 @@
+
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.Controllers;
 
-public class AdminController : Controller
+public class CategorieController : Controller
 {
-    private readonly ILogger<AdminController> _logger;
+    private readonly ILogger<CategorieController> _logger;
 
-    public AdminController(ILogger<AdminController> logger)
+    public CategorieController(ILogger<CategorieController> logger)
     {
         _logger = logger;
     }
 
-    [HttpGet]
     public IActionResult Index()
     {
         return View();
     }
-    
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

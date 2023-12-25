@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - E_Commerce</title>
+    <title>@ViewData["Title"] - Vresh Vial</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/owl.carousel.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/magnific-popup.css" asp-append-version="true" />
@@ -73,35 +73,26 @@
                                         <a asp-area="" asp-controller="Home" asp-action="About">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a asp-area="" asp-controller="Home" asp-action="Index">Cart Products</a>
-                                        <ul class="sub-menu">
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Products</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Products Details</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Cart</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Checkout</a></li>
-                                        </ul>
+                                        <a asp-area="" asp-controller="Categorie" asp-action="Index">Categories</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a asp-area="" asp-controller="Home" asp-action="Index">Our Pages</a>
-                                        <ul class="sub-menu">
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Testimonial</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Faq</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Team</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Pricing</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Login</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Register</a></li>
-                                        </ul>
-
+                                        <a asp-area="" asp-controller="Product" asp-action="Index">Products</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a asp-area="" asp-controller="Home" asp-action="Index">Letest Blog</a>
-                                        <ul class="sub-menu">
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Blog</a></li>
-                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Blog Details</a></li>
-                                        </ul>
+                                        <a asp-area="" asp-controller="Home" asp-action="Pricing">Pricing</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#">Contact Us</a>
+                                        <a asp-area="" asp-controller="Home" asp-action="Team">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="Testimonial">Testimonial</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Blog" asp-action="Index">Our Blogs</a>
+                                        
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -255,7 +246,7 @@
         </div>
         
         <div class="copyright pt-15 pb-15 text-center">
-            &copy; 2023 - <span>Fresh Water</span> - All Rights Reserved<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - <span>Fresh Water</span> - All Rights Reserved <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
         
     </footer>

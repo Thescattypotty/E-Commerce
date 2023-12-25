@@ -15,10 +15,52 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.BackgroundImage = Url.Content("~/images/bg-1.jpg");
+        return View();
+    }
+
+    public IActionResult About()
+    {
+        ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
+        
+        return View();
+    }
+
+    public IActionResult Contact()
+    {
+        return View();
+    }
+
+    public IActionResult Pricing()
+    {
+        ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
+        return View();
+    }
+
+    public IActionResult Login()
+    {
+        return View();
+    }
+    public IActionResult Register()
+    {
         return View();
     }
 
     public IActionResult Privacy()
+    {
+        return View();
+    }
+
+    public IActionResult Team()
+    {
+        return View();
+    }
+    public IActionResult Testimonial()
+    {
+        return View();
+    }
+
+    public IActionResult FAQ()
     {
         return View();
     }

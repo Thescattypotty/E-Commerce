@@ -5,45 +5,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - E_Commerce</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/E_Commerce.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/magnific-popup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/slick.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/nice-select.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/jquery.nice-number.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/font-awesome.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/default.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/responsive.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_Commerce</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="preloader">
+        <div class="thecube">
+			<div class="cube c1"></div>
+			<div class="cube c2"></div>
+			<div class="cube c4"></div>
+			<div class="cube c3"></div>
+        </div>
+    </div>
+
+    <header id="header-part">
+        <!--===== HEADER TOP START =====-->
+        <div class="header-top pt-15 pb-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                        <div class="phone text-center text-lg-left">
+                            <p>Phone : (+88 - 123456789)</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-6">
+                        <div class="opening text-center">
+                            <p>Opening Hours : Monday To Saturday - 8AM TO 8PM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="address text-center text-lg-right">
+                            <p><i class="fa fa-map-marker"></i>KA-62/1, Kuril, Progoti, Canada</p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> 
+        <!--===== HEADER TOP ENDS =====-->
+        
+        <!--===== NAVBAR START =====-->
+        <div class="navigation">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-11 col-10">
+                        <nav class="navbar navbar-expand-lg">
+                           
+                            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                                <img src="~/images/logo.png" alt="Logo">
+                            </a> <!-- Logo -->
+                            
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button> <!-- toggle Button -->
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="About">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="Index">Cart Products</a>
+                                        <ul class="sub-menu">
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Products</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Products Details</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Cart</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Checkout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="Index">Our Pages</a>
+                                        <ul class="sub-menu">
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Testimonial</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Faq</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Team</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Pricing</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Login</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Register</a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="Index">Letest Blog</a>
+                                        <ul class="sub-menu">
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Blog</a></li>
+                                            <li class="li"><a asp-area="" asp-controller="Home" asp-action="Index">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>  <!-- nav -->
+                    </div>
+                    <div class="col-lg-1 col-2">
+                        <div class="cart-search text-right">
+                            <ul>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-shopping-basket"></i><span>0</span></a></li>
+                                <li><a id="search" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-search"></i></a>
+                                    <div class="search-box">
+                                        <input type="search" placeholder="Search...">
+                                        <button type="button"><i class="fa fa-search"></i></button>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div> <!-- cart search -->
+                    </div> 
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <!--===== NAVBAR ENDS =====-->
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - E_Commerce - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+    <footer id="footer-part" class="pt-65">
+        <div class="container ">
+            <div class="newsletter pb-45">
+                <div class="row align-items-end">
+                    <div class="col-lg-4">
+                        <div class="newsletter-text">
+                            <h2>Newsletter</h2>
+                            <p>Nullam condimentum varius ipsum at viverra. Donec tortor metus, sollicitudin vitae est id, ullamcorper pretium tortor.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <form action="#">
+                            <div class="row no-gutters pt-40">
+                                <div class="col-sm-9">
+                                    <div class="newsform">
+                                        <input type="email" placeholder="Enter Your email address...">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                     <div class="newsform">
+                                         <button type="button">Subscribe</button>
+                                     </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer pt-20 pb-45">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about pt-30">
+                            <a href="#"><img src="images/logo-footer.png" alt="logo"></a>
+                            <p>Donec vel ligula ornare, finibus ex at, vive risus. Aenean velit ex, finibus elementum eu, dignissim varius augue. </p>
+                            <span><i class="fa fa-globe"></i>www.fresh@water.com</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="footer-title pt-30">
+                            <h5>Information</h5>
+                        </div>
+                        <div class="footer-info">
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="footer-title pt-30">
+                            <h5>Our Services</h5>
+                        </div>
+                        <div class="footer-info">
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                                <li><a href="#">Returns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-title pt-30">
+                            <h5>Recent News</h5>
+                        </div>
+                        <div class="footer-news">
+                            <ul>
+                                <li>
+                                    <p>Nullam condimenum varius ipsum.</p>
+                                    <a href="#"><i class="fa fa-calendar"></i> 15 Aug 2018</a>
+                                </li>
+                                <li>
+                                    <p>Nullam condimenum varius ipsum.</p>
+                                    <a href="#"><i class="fa fa-calendar"></i> 15 Aug 2018</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-title pt-30">
+                            <h5>Get In Tuch</h5>
+                        </div>
+                        <div class="footer-address">
+                            <ul>
+                                <li>
+                                    <div class="icon map-i">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="address">
+                                        <h5>Fresh Water</h5>
+                                        <p>45 Grand Central Terminal <br> New York.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-volume-control-phone"></i>
+                                    </div>
+                                    <div class="address">
+                                        <p>+00123654789</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="address">
+                                        <p>freshwater@gmail.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <div class="copyright pt-15 pb-15 text-center">
+            &copy; 2023 - <span>Fresh Water</span> - All Rights Reserved<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+        
     </footer>
+    
+    <!--====== FOOTER PART ENDS ======-->
+   
+    <!--====== BACK TO TOP PART START ======-->
+    
+    <a href="#" class="back-to-top">
+        <img src="~/images/back-to-top.png" alt="Icon">
+    </a>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+     <!--====== jquery js ======-->
+    <script src="~/js/vendor/modernizr-3.6.0.min.js" asp-append-version="true"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!--====== Owl Carousel js ======-->
+    <script src="~/js/owl.carousel.min.js" asp-append-version="true"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="~/js/jquery.magnific-popup.min.js" asp-append-version="true"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="~/js/slick.min.js" asp-append-version="true"></script>
+    
+    <!--====== Nice Number js ======-->
+    <script src="~/js/jquery.nice-number.min.js" asp-append-version="true"></script>
+    
+    <!--====== Nice Select js ======-->
+    <script src="~/js/jquery.nice-select.min.js" asp-append-version="true"></script>
+    
+    <!--====== Validator js ======-->
+    <script src="~/js/validator.min.js" asp-append-version="true"></script>
+
+    <!--====== Main js ======-->
+    <script src="~/js/main.js" asp-append-version="true"></script>
+
+    <!--====== Google Map js ======-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
+    <script src="~/js/map-script.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

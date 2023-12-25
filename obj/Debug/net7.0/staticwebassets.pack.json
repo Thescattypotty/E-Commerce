@@ -5,16 +5,360 @@
       "PackagePath": "staticwebassets/E-Commerce.bundle.scp.css"
     },
     {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/default.css",
+      "PackagePath": "staticwebassets/css/default.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/font-awesome.min.css",
+      "PackagePath": "staticwebassets/css/font-awesome.min.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/jquery.nice-number.min.css",
+      "PackagePath": "staticwebassets/css/jquery.nice-number.min.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/magnific-popup.css",
+      "PackagePath": "staticwebassets/css/magnific-popup.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/nice-select.css",
+      "PackagePath": "staticwebassets/css/nice-select.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/css/owl.carousel.min.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/responsive.css",
+      "PackagePath": "staticwebassets/css/responsive.css"
+    },
+    {
       "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/slick.css",
+      "PackagePath": "staticwebassets/css/slick.css"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
     },
     {
       "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/fonts/fontawesome-webfont.eot?",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.eot?"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/fonts/fontawesome-webfont.eot?v=4.7.0",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.eot?v=4.7.0"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/fonts/fontawesome-webfont.svg?v=4.7.0",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.svg?v=4.7.0"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/fonts/fontawesome-webfont.ttf?v=4.7.0",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.ttf?v=4.7.0"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/fonts/fontawesome-webfont.woff2?v=4.7.0",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff2?v=4.7.0"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/fonts/fontawesome-webfont.woff?v=4.7.0",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff?v=4.7.0"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/about.jpg",
+      "PackagePath": "staticwebassets/images/about.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/back-to-top.png",
+      "PackagePath": "staticwebassets/images/back-to-top.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/bg-1.jpg",
+      "PackagePath": "staticwebassets/images/bg-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/bg-2.jpg",
+      "PackagePath": "staticwebassets/images/bg-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/bg-3.jpg",
+      "PackagePath": "staticwebassets/images/bg-3.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/bg-4.jpg",
+      "PackagePath": "staticwebassets/images/bg-4.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/blog/b-1.jpg",
+      "PackagePath": "staticwebassets/images/blog/b-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/blog/b-2.jpg",
+      "PackagePath": "staticwebassets/images/blog/b-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/blog/b-3.jpg",
+      "PackagePath": "staticwebassets/images/blog/b-3.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/blog/bd-1.jpg",
+      "PackagePath": "staticwebassets/images/blog/bd-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/blog/cm-1.jpg",
+      "PackagePath": "staticwebassets/images/blog/cm-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/blog/cm-2.jpg",
+      "PackagePath": "staticwebassets/images/blog/cm-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/blog/cm-3.jpg",
+      "PackagePath": "staticwebassets/images/blog/cm-3.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/choose-us/icon-1.png",
+      "PackagePath": "staticwebassets/images/choose-us/icon-1.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/choose-us/icon-2.png",
+      "PackagePath": "staticwebassets/images/choose-us/icon-2.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/choose-us/icon-3.png",
+      "PackagePath": "staticwebassets/images/choose-us/icon-3.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/choose-us/icon-4.png",
+      "PackagePath": "staticwebassets/images/choose-us/icon-4.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/choose-us/services-1.jpg",
+      "PackagePath": "staticwebassets/images/choose-us/services-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/choose-us/services-2.jpg",
+      "PackagePath": "staticwebassets/images/choose-us/services-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/client/c-1.jpg",
+      "PackagePath": "staticwebassets/images/client/c-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/client/c-2.jpg",
+      "PackagePath": "staticwebassets/images/client/c-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/client/c.png",
+      "PackagePath": "staticwebassets/images/client/c.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/delivery-van.png",
+      "PackagePath": "staticwebassets/images/delivery-van.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/favicon.png",
+      "PackagePath": "staticwebassets/images/favicon.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/glass.png",
+      "PackagePath": "staticwebassets/images/glass.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/logo-footer.png",
+      "PackagePath": "staticwebassets/images/logo-footer.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/logo-light-footer.png",
+      "PackagePath": "staticwebassets/images/logo-light-footer.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/logo-light.png",
+      "PackagePath": "staticwebassets/images/logo-light.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/page-banner.jpg",
+      "PackagePath": "staticwebassets/images/page-banner.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/patnarlogo/1.png",
+      "PackagePath": "staticwebassets/images/patnarlogo/1.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/patnarlogo/2.png",
+      "PackagePath": "staticwebassets/images/patnarlogo/2.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/patnarlogo/3.png",
+      "PackagePath": "staticwebassets/images/patnarlogo/3.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/patnarlogo/4.png",
+      "PackagePath": "staticwebassets/images/patnarlogo/4.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/cart/1.jpg",
+      "PackagePath": "staticwebassets/images/product/cart/1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/cart/2.jpg",
+      "PackagePath": "staticwebassets/images/product/cart/2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/p-1.jpg",
+      "PackagePath": "staticwebassets/images/product/p-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/p-2.jpg",
+      "PackagePath": "staticwebassets/images/product/p-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/p-3.jpg",
+      "PackagePath": "staticwebassets/images/product/p-3.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/p-4.jpg",
+      "PackagePath": "staticwebassets/images/product/p-4.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pd-1.jpg",
+      "PackagePath": "staticwebassets/images/product/pd-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pd-2.jpg",
+      "PackagePath": "staticwebassets/images/product/pd-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pd-3.jpg",
+      "PackagePath": "staticwebassets/images/product/pd-3.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pd-4.jpg",
+      "PackagePath": "staticwebassets/images/product/pd-4.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pdm-1.jpg",
+      "PackagePath": "staticwebassets/images/product/pdm-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pdm-2.jpg",
+      "PackagePath": "staticwebassets/images/product/pdm-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pdm-3.jpg",
+      "PackagePath": "staticwebassets/images/product/pdm-3.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/pdm-4.jpg",
+      "PackagePath": "staticwebassets/images/product/pdm-4.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/review/r-1.jpg",
+      "PackagePath": "staticwebassets/images/product/review/r-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/product/review/r-2.jpg",
+      "PackagePath": "staticwebassets/images/product/review/r-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/shape-2.png",
+      "PackagePath": "staticwebassets/images/shape-2.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/shape.png",
+      "PackagePath": "staticwebassets/images/shape.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/sing.png",
+      "PackagePath": "staticwebassets/images/sing.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/slider/s-1.jpg",
+      "PackagePath": "staticwebassets/images/slider/s-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/team/t-1.jpg",
+      "PackagePath": "staticwebassets/images/team/t-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/team/t-2.jpg",
+      "PackagePath": "staticwebassets/images/team/t-2.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/team/t-3.jpg",
+      "PackagePath": "staticwebassets/images/team/t-3.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/team/t-4.jpg",
+      "PackagePath": "staticwebassets/images/team/t-4.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/trusted-clients/bg-1.jpg",
+      "PackagePath": "staticwebassets/images/trusted-clients/bg-1.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/trusted-clients/icon.png",
+      "PackagePath": "staticwebassets/images/trusted-clients/icon.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/trusted-clients/tc-logo.png",
+      "PackagePath": "staticwebassets/images/trusted-clients/tc-logo.png"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/images/video.jpg",
+      "PackagePath": "staticwebassets/images/video.jpg"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets/js/jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/jquery.nice-number.min.js",
+      "PackagePath": "staticwebassets/js/jquery.nice-number.min.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets/js/jquery.nice-select.min.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/map-script.js",
+      "PackagePath": "staticwebassets/js/map-script.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/js/owl.carousel.min.js"
+    },
+    {
       "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/slick.min.js",
+      "PackagePath": "staticwebassets/js/slick.min.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/validator.min.js",
+      "PackagePath": "staticwebassets/js/validator.min.js"
+    },
+    {
+      "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/js/vendor/modernizr-3.6.0.min.js",
+      "PackagePath": "staticwebassets/js/vendor/modernizr-3.6.0.min.js"
     },
     {
       "Id": "/home/senshi/Desktop/E-Commerce/wwwroot/lib/bootstrap/LICENSE",

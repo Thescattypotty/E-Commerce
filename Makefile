@@ -1,5 +1,5 @@
 PROJECT_NAME = E-Commerce
-MIGRATION_NAME ?= AddingUserModel
+MIGRATION_NAME ?= Init
 
 .PHONY: build run migrate update delete
 

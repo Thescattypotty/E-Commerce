@@ -16,5 +16,12 @@ Categorie :
     NameOfCategorie: String 
     ListOFProduct : Product
 
+User : extends IdentityUser
+    FirstName : String
+    LastName : String 
+    Birthday : DateTime
+    Address : String 
+    
+
 I will travel on a mega store , 
 so every product can go to many categories or subcategories

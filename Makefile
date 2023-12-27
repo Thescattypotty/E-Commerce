@@ -1,7 +1,6 @@
 PROJECT_NAME = E-Commerce
-MIGRATION_NAME ?= Init
 
-.PHONY: build run migrate update delete
+.PHONY: build run 
 
 build:
 	dotnet build $(PROJECT_NAME).csproj
@@ -9,12 +8,14 @@ build:
 run:
 	dotnet run --project $(PROJECT_NAME).csproj --urls "https://localhost:7060;http://localhost:5037"
 
-migrate:
-	dotnet ef migrations add $(MIGRATION_NAME) --project $(PROJECT_NAME).csproj
-	dotnet ef database update --project $(PROJECT_NAME).csproj
+migrateApp: 
+	dotnet ef migrations add $(filter-out $@,$(MAKECMDGOALS)) --context ECommerceDbContext --project $(PROJECT_NAME).csproj
+	dotnet ef database update --context ECommerceDbContext --project $(PROJECT_NAME).csproj
 
-update:
-	dotnet ef database update --project $(PROJECT_NAME).csproj
+migrateUser:
+	dotnet ef migrations add $(filter-out $@,$(MAKECMDGOALS)) --context SecurityDbContext --project $(PROJECT_NAME).csproj
+	dotnet ef database update --context SecurityDbContext --project $(PROJECT_NAME).csproj
 
 delete:
-	dotnet ef database drop --project $(PROJECT_NAME).csproj
+	dotnet ef database drop --context ECommerceDbContext --project $(PROJECT_NAME).csproj
+	dotnet ef database drop --context SecurityDbContext --project $(PROJECT_NAME).csproj

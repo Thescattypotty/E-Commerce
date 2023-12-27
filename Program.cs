@@ -15,14 +15,14 @@ builder.Services.AddDbContext<ECommerceDbContext>(
 );
 builder.Services.AddDefaultIdentity<User>(
    options => options.SignIn.RequireConfirmedAccount = true
-).AddEntityFrameworkStores<SecurityDbContext>();
+).AddEntityFrameworkStores<SecurityDbContext>()
+    .AddDefaultTokenProviders(); ;
 
 builder.Services.AddDbContext<SecurityDbContext>(
     options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
-builder.Services.AddIdentity<User, IdentityRole<Guid>>()
-    .AddEntityFrameworkStores<SecurityDbContext>()
-    .AddDefaultTokenProviders();
+
+
 
 
 var app = builder.Build();

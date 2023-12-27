@@ -10516,6 +10516,7 @@
       "Microsoft.AspNetCore.Identity.UI >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SQLite >= 7.0.0",
+      "Microsoft.EntityFrameworkCore.SqLite.Core >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.0"
     ]
@@ -10576,6 +10577,10 @@
             "version": "[7.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.SQLite": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqLite.Core": {
             "target": "Package",
             "version": "[7.0.0, )"
           },

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.Controllers;
 
+[Route(template: "Products/")]
 public class ProductController : Controller
 {
     private readonly ILogger<ProductController> _logger;
@@ -11,6 +12,7 @@ public class ProductController : Controller
         _logger = logger;
     }
 
+    [Route(template: "", Name ="products.index")]
     public IActionResult Index()
     {
         ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
@@ -18,7 +20,7 @@ public class ProductController : Controller
         return View();
     }
 
-
+    [Route(template: "error/", Name ="products.error")]
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

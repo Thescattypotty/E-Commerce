@@ -16,7 +16,7 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    [Route(template: "", Name = "index")]
+    [Route(template: "", Name = "home.index")]
     public IActionResult Index()
     {
         ViewBag.BackgroundImage = Url.Content("~/images/bg-1.jpg");
@@ -24,7 +24,7 @@ public class HomeController : Controller
         return View();
     }
 
-    [Route(template: "About/", Name = "about")]
+    [Route(template: "About/", Name = "home.about")]
     public IActionResult About()
     {
         ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
@@ -33,7 +33,7 @@ public class HomeController : Controller
         return View();
     }
 
-    [Route(template: "Contact/", Name = "contact")]
+    [Route(template: "Contact/", Name = "home.contact")]
     public IActionResult Contact()
     {
         ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
@@ -41,7 +41,7 @@ public class HomeController : Controller
         return View();
     }
 
-    [Route(template: "Pricing/", Name = "pricing")]
+    [Route(template: "Pricing/", Name = "home.pricing")]
     public IActionResult Pricing()
     {
         ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
@@ -49,20 +49,20 @@ public class HomeController : Controller
         return View();
     }
 
-    [Route(template: "Privacy/", Name = "privacy")]
+    [Route(template: "Privacy/", Name = "home.privacy")]
     public IActionResult Privacy()
     {
         return View();
     }
 
-    [Route(template: "Team/", Name = "team")]
+    [Route(template: "Team/", Name = "home.team")]
     public IActionResult Team()
     {
         return View();
     }
 
 
-    [Route(template: "Testimonial/", Name = "testimonial")]
+    [Route(template: "Testimonial/", Name = "home.testimonial")]
     public IActionResult Testimonial()
     {
         return View();
@@ -70,7 +70,7 @@ public class HomeController : Controller
 
 
 
-    [Route(template: "FAQ/", Name = "faq")]
+    [Route(template: "FAQ/", Name = "home.faq")]
     public IActionResult FAQ()
     {
         return View();

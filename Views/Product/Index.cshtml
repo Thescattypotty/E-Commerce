@@ -1,18 +1,19 @@
 @{
-    ViewData["Title"] = "Products";
+    ViewData["Title"] = "Shop Page";
 }
 
-<section id="page-banner" class="pt-200 pb-150 bg_cover" style="background-image: url(@ViewBag.BackgroundImage)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-banner-content">
-                        <h3>Shop Page</h3>
-                    </div>
+<section id="page-banner" class="pt-200 pb-150 bg_cover"
+    style="background-image: url('  @Url.Content("~/images/page-banner.jpg")   ');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-banner-content">
+                    <h3>@ViewData["Title"]</h3>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!--====== PAGE BANNER PART ENDS ======-->
 

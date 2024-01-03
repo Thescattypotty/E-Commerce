@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
-    <section id="slider-part" class="bg_cover" style="background-image: url(@ViewBag.BackgroundImage)" >
+    <section id="slider-part" class="bg_cover" style="background-image: url('  @Url.Content("~/images/bg-1.jpg")   ');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -643,37 +643,5 @@
     
     <!--====== BLOG PART ENDS ======-->
    
-    <!--====== DELIVERY PART START ======-->
-    
-    <section id="delivery-part" class="bg_cover pt-110" data-overlay="8" style="background-image: url(@ViewBag.BackgroundImage2)">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 offset-lg-1">
-                    <div class="delivery-text text-center pb-30">
-                        <h2>Water Delivery 20 k.m.  Free Service</h2>
-                        <p>Nunc molestie mi nunc, nec accumsan libero dignissim sit amet. Fusce sit amet tincidunt metus. Nunc eu risus suscipit massa dapibu.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="up-down text-center">
-                        <div class="up-down-box">
-                            <a href="#slider-part">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="delivery-image d-none d-lg-block">
-            <img src="~/images/delivery-van.png" alt="Iamge">
-        </div>
-    </section>
-    
-    <!--====== DELIVERY PART ENDS ======-->
+
 

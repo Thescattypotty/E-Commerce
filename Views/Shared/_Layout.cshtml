@@ -108,7 +108,7 @@
                                     {
                                         <li class="nav-item">
                                             <a id="manage" asp-area="Identity" asp-page="/Account/Manage/Index"
-                                                title="Manage">
+                                                title="Account">
                                                 <i class="fa fa-user"></i>
                                             </a>
                                             <ul class="sub-menu">
@@ -117,16 +117,12 @@
                                                         title="Manage">Profile</a>
                                                 </li>
                                                 <li class="li">
-                                                    <a asp-area="Identity" asp-page="/Account/Manage/Index"
-                                                        title="Manage">Profile</a>
-                                                </li>
-                                                <li class="li">
-                                                    <a asp-area="Identity" asp-page="/Account/Manage/Index"
-                                                        title="Manage">Profile</a>
+                                                    <a asp-area="Identity" asp-page="/Account/Manage/ChangePassword"
+                                                        title="Change Password">Change Password</a>
                                                 </li>
                                                 <li class="li">
                                                     <form id="logoutForm" asp-area="Identity"
-                                                        asp-page="/Account/Logout"
+                                                        asp-page="/Account/Logout" title ="Logout"
                                                         asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                                                         <button id="logout" type="submit"
                                                             class="nav-link btn btn-link text-dark border-0">Logout</button>
@@ -158,7 +154,38 @@
             @RenderBody()
         </main>
     </div>
-
+        <section id="delivery-part" class="bg_cover pt-110" data-overlay="8" style="background-image: url('  @Url.Content("~/images/bg-2.jpg")   ');">
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="delivery-text text-center pb-30">
+                        <h2>Water Delivery 20 k.m.  Free Service</h2>
+                        <p>Nunc molestie mi nunc, nec accumsan libero dignissim sit amet. Fusce sit amet tincidunt metus. Nunc eu risus suscipit massa dapibu.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="up-down text-center">
+                        <div class="up-down-box">
+                            <a href="#slider-part">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery-image d-none d-lg-block">
+            <img src="~/images/delivery-van.png" alt="Iamge">
+        </div>
+    </section>
+    
+    <!--====== DELIVERY PART ENDS ======-->
 
     <footer id="footer-part" class="pt-65">
         <div class="container ">
@@ -194,7 +221,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-about pt-30">
-                            <a href="#"><img src="images/logo-footer.png" alt="logo"></a>
+                            <a href="#"><img src="~/images/logo-footer.png" alt="logo"></a>
                             <p>Donec vel ligula ornare, finibus ex at, vive risus. Aenean velit ex, finibus elementum
                                 eu, dignissim varius augue. </p>
                             <span><i class="fa fa-globe"></i>www.fresh@water.com</span>

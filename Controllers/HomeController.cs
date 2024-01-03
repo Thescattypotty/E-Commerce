@@ -9,8 +9,6 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-
-
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
@@ -18,34 +16,25 @@ public class HomeController : Controller
 
     [Route(template: "", Name = "home.index")]
     public IActionResult Index()
-    {
-        ViewBag.BackgroundImage = Url.Content("~/images/bg-1.jpg");
-        ViewBag.BackgroundImage2 = Url.Content("~/images/bg-2.jpg");
+    { 
         return View();
     }
 
     [Route(template: "About/", Name = "home.about")]
     public IActionResult About()
     {
-        ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
-        ViewBag.BackgroundImage2 = Url.Content("~/images/bg-2.jpg");
-
         return View();
     }
 
     [Route(template: "Contact/", Name = "home.contact")]
     public IActionResult Contact()
     {
-        ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
-        ViewBag.BackgroundImage2 = Url.Content("~/images/bg-2.jpg");
         return View();
     }
 
     [Route(template: "Pricing/", Name = "home.pricing")]
     public IActionResult Pricing()
     {
-        ViewBag.BackgroundImage = Url.Content("~/images/page-banner.jpg");
-        ViewBag.BackgroundImage2 = Url.Content("~/images/bg-2.jpg");
         return View();
     }
 

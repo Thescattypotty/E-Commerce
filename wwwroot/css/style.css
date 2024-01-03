@@ -338,12 +338,30 @@ p {
     width: 100%;
     z-index: 99;
 }
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+}
 
-.container-exemple {
-    width: 90%;
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+.dropdown-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-divider {
+    height: 1px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    background-color: #e9ecef;
 }
 
 .navigation.sticky {

@@ -6,6 +6,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,13 +22,14 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/responsive.css" asp-append-version="true" />
 </head>
+
 <body>
     <div class="preloader">
         <div class="thecube">
-			<div class="cube c1"></div>
-			<div class="cube c2"></div>
-			<div class="cube c4"></div>
-			<div class="cube c3"></div>
+            <div class="cube c1"></div>
+            <div class="cube c2"></div>
+            <div class="cube c4"></div>
+            <div class="cube c3"></div>
         </div>
     </div>
 
@@ -53,21 +55,23 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-        </div> 
+        </div>
         <!--===== HEADER TOP ENDS =====-->
-        
+
         <!--===== NAVBAR START =====-->
         <div class="navigation">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-lg-12 col-10">
                         <nav class="navbar navbar-expand-lg">
-                           
+
                             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                                 <img src="~/images/logo.png" alt="Logo">
                             </a> <!-- Logo -->
-                            
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -95,38 +99,60 @@
                                     </li>
                                     <li class="nav-item">
                                         <a asp-area="" asp-controller="Blog" asp-action="Index">Our Blogs</a>
-                                        
+
                                     </li>
                                     <li class="nav-item">
                                         <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
                                     </li>
                                     @if (SignInManager.IsSignedIn(User))
-                                        {
-                                            <li class="nav-item">
-                                                <a id="manage" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><i class ="fa fa-user"></i></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a id="logout" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"></a>
-                                            </li>
-                                        }
-                                        else
-                                        {
-                                            <li class="nav-item">
-                                                <a id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
-                                            </li>
-                                        } 
+                                    {
+                                        <li class="nav-item">
+                                            <a id="manage" asp-area="Identity" asp-page="/Account/Manage/Index"
+                                                title="Manage">
+                                                <i class="fa fa-user"></i>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="li">
+                                                    <a asp-area="Identity" asp-page="/Account/Manage/Index"
+                                                        title="Manage">Profile</a>
+                                                </li>
+                                                <li class="li">
+                                                    <a asp-area="Identity" asp-page="/Account/Manage/Index"
+                                                        title="Manage">Profile</a>
+                                                </li>
+                                                <li class="li">
+                                                    <a asp-area="Identity" asp-page="/Account/Manage/Index"
+                                                        title="Manage">Profile</a>
+                                                </li>
+                                                <li class="li">
+                                                    <form id="logoutForm" asp-area="Identity"
+                                                        asp-page="/Account/Logout"
+                                                        asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                                        <button id="logout" type="submit"
+                                                            class="nav-link btn btn-link text-dark border-0">Logout</button>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="nav-item">
+                                            <a id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                                        </li>
+                                    }
                                 </ul>
 
                             </div>
-                        </nav>  <!-- nav -->
+                        </nav> <!-- nav -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-            
+
         </div>
         <!--===== NAVBAR ENDS =====-->
     </header>
-    
+
     <div>
         <main role="main">
             @RenderBody()
@@ -141,7 +167,8 @@
                     <div class="col-lg-4">
                         <div class="newsletter-text">
                             <h2>Newsletter</h2>
-                            <p>Nullam condimentum varius ipsum at viverra. Donec tortor metus, sollicitudin vitae est id, ullamcorper pretium tortor.</p>
+                            <p>Nullam condimentum varius ipsum at viverra. Donec tortor metus, sollicitudin vitae est
+                                id, ullamcorper pretium tortor.</p>
                         </div>
                     </div>
                     <div class="col-lg-7 offset-lg-1">
@@ -153,22 +180,23 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
-                                     <div class="newsform">
-                                         <button type="button">Subscribe</button>
-                                     </div>
+                                    <div class="newsform">
+                                        <button type="button">Subscribe</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer pt-20 pb-45">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-about pt-30">
                             <a href="#"><img src="images/logo-footer.png" alt="logo"></a>
-                            <p>Donec vel ligula ornare, finibus ex at, vive risus. Aenean velit ex, finibus elementum eu, dignissim varius augue. </p>
+                            <p>Donec vel ligula ornare, finibus ex at, vive risus. Aenean velit ex, finibus elementum
+                                eu, dignissim varius augue. </p>
                             <span><i class="fa fa-globe"></i>www.fresh@water.com</span>
                         </div>
                     </div>
@@ -255,41 +283,42 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="copyright pt-15 pb-15 text-center">
-            &copy; 2023 - <span>Fresh Water</span> - All Rights Reserved <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - <span>Fresh Water</span> - All Rights Reserved <a asp-area="" asp-controller="Home"
+                asp-action="Privacy">Privacy</a>
         </div>
-        
+
     </footer>
-    
+
     <!--====== FOOTER PART ENDS ======-->
-   
+
     <!--====== BACK TO TOP PART START ======-->
-    
+
     <a href="#" class="back-to-top">
         <img src="~/images/back-to-top.png" alt="Icon">
     </a>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-     <!--====== jquery js ======-->
+    <!--====== jquery js ======-->
     <script src="~/js/vendor/modernizr-3.6.0.min.js" asp-append-version="true"></script>
     <!--====== Bootstrap js ======-->
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
     <!--====== Owl Carousel js ======-->
     <script src="~/js/owl.carousel.min.js" asp-append-version="true"></script>
-    
+
     <!--====== Magnific Popup js ======-->
     <script src="~/js/jquery.magnific-popup.min.js" asp-append-version="true"></script>
-    
+
     <!--====== Slick js ======-->
     <script src="~/js/slick.min.js" asp-append-version="true"></script>
-    
+
     <!--====== Nice Number js ======-->
     <script src="~/js/jquery.nice-number.min.js" asp-append-version="true"></script>
-    
+
     <!--====== Nice Select js ======-->
     <script src="~/js/jquery.nice-select.min.js" asp-append-version="true"></script>
-    
+
     <!--====== Validator js ======-->
     <script src="~/js/validator.min.js" asp-append-version="true"></script>
 
@@ -302,4 +331,5 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

@@ -1,0 +1,30 @@
+<li class="nav-item">
+    <a href="#">
+        <i class="fa fa-shopping-cart">
+            <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+            </span>
+        </i>
+    </a>
+    <ul class="sub-menu container dropdown-cart" role="menu">
+        <li class="li">
+            <span class="item">
+                <span class="item-left">
+                    <img src="~/images/logo.png" alt="Logo">
+                    <span class="item-info">
+                        <span>Item Name</span>
+                        <span>
+                            24$</span>
+                    </span>
+                </span>
+                <span class="item-right">
+                    <button class="btn btn-xs btn-danger pull-right">x</button>
+                </span>
+            </span>
+        </li>
+        <li class="li divider"></li>
+        <li class="li">
+            <a asp-route="cart.index">View Cart</a>
+        </li>
+    </ul>
+</li>

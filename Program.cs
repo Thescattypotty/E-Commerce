@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication;
 using E_Commerce.Models.Security;
 using Microsoft.AspNetCore.Identity;
+using E_Commerce.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,17 @@ builder.Services.AddDbContext<SecurityDbContext>(
 
 
 var app = builder.Build();
+
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedData.InitializeDomain(services);
+    
+    var userManager = services.GetRequiredService<UserManager<User>>();
+    await SecurityDbContext.SeedData(userManager);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace E_Commerce.Models.Domain;
 
 public class Product
@@ -7,10 +9,18 @@ public class Product
     public string? PageTitle {get ; set;}
     public string? content {get ; set;}
     public string? ShortDescription {get ; set;}
-    public string? FeaturedImageUrl {get ; set;}
-    public string? UrlHandle {get ; set;}
+    public byte[]? Image {get ; set;}
+    public double? Price {get ; set;}
+    public double? SellPrice {get ; set;}
     public DateTime? PublishedAt {get ; set;}
     public bool? isVisible {get ; set;}
-    public ICollection<Categorie>? Categories {get ; set;}
+    public Categorie? Categorie {get ; set;}
+
+    
+    [NotMapped]
+    public string? ImageBase64
+    {
+        get => Image != null ? Convert.ToBase64String(Image) : string.Empty;
+    }
 
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ECommerce.Migrations
 {
     /// <inheritdoc />
-    public partial class InitSecurity : Migration
+    public partial class init2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -32,7 +32,9 @@ namespace ECommerce.Migrations
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     FirstName = table.Column<string>(type: "TEXT", nullable: true),
                     LastName = table.Column<string>(type: "TEXT", nullable: true),
-                    Address = table.Column<string>(type: "TEXT", nullable: true),
+                    City = table.Column<string>(type: "TEXT", nullable: true),
+                    Adress = table.Column<string>(type: "TEXT", nullable: true),
+                    ProfileImage = table.Column<byte[]>(type: "BLOB", nullable: true),
                     Birthday = table.Column<DateTime>(type: "TEXT", nullable: true),
                     UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),

@@ -1,6 +1,6 @@
-
-
+using E_Commerce.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce.Controllers;
 
@@ -8,16 +8,30 @@ namespace E_Commerce.Controllers;
 public class CategorieController : Controller
 {
     private readonly ILogger<CategorieController> _logger;
+    private readonly ECommerceDbContext _context;
 
-    public CategorieController(ILogger<CategorieController> logger)
+    public CategorieController(ECommerceDbContext context,ILogger<CategorieController> logger)
     {
+        _context = context;
         _logger = logger;
     }
 
+    //GET method
     [Route(template: "", Name = "categories.index")]
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        if(_context.Categories == null)
+        {
+            Problem("Entity set 'ECommerceDbContext.Categories'  is null.");
+        }
+        var categories = await _context.Categories
+            .ToListAsync();
+        if(categories == null)
+        {
+            Problem("Entity set 'ECommerceDbContext.Categories'  is null.");
+        }
+
+        return View(categories);
     }
 
     [Route(template: "error/", Name ="categories.error")]

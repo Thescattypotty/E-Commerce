@@ -104,6 +104,9 @@
                                     <li class="nav-item">
                                         <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
                                     </li>
+                                    <li class ="nav-item">
+                                       <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </li>
                                     @if (SignInManager.IsSignedIn(User))
                                     {
                                         <li class="nav-item">
@@ -137,6 +140,7 @@
                                             <a id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
                                         </li>
                                     }
+
                                 </ul>
 
                             </div>

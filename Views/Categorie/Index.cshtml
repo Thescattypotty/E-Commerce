@@ -1,3 +1,5 @@
+@model IEnumerable<E_Commerce.Models.Domain.Categorie>
+
 @{
     ViewData["Title"] = "Our Categories";
 }
@@ -14,3 +16,116 @@
         </div>
     </div>
 </section>
+
+<section id="blog-part" class="pt-65">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center pb-15">
+                    <h2>Our Categroies </h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>Nunc molestie mi nunc, nec accumsan libero dignissim sit amet. Fusce sit amet tincidunt metus. Nunc eu risus suscipit massa dapibus blandit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach(var item in Model)
+            {
+            <div class="col-lg-4 col-md-6">
+                <div class="singel-blog mt-30">
+                    <div class="blog-thum">
+                        @if(!string.IsNullOrEmpty(item.ImageBase64))
+                        {
+                            <img src="data:image/jpg;base64,@item.ImageBase64" alt="Blog">
+                        }
+
+                        <div class="date text-center">
+                            <span><a href ="#">@Html.DisplayFor(modelItem => item.Name)</a></span>
+                        </div>
+                    </div>
+                    <div class="blog-cont pt-25">
+                        <a href="#">
+                            <h5>@Html.DisplayFor(modelItem => item.Name)</h5>
+                        </a>
+                        <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                        <a href="#">View Our Categorie</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+</section>
+
+    <!--====== BRAND PART START ======-->
+    
+    <section id="brand-part" class="pt-65 pb-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2>Business Partners</h2>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>Nunc molestie mi nunc, nec accumsan libero dignissim sit amet. Fusce sit amet tincidunt metus. Nunc eu risus suscipit massa dapibus blandit. Vivamus ac commodo eros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="brand-slied owl-carousel mt-45">
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/1.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/2.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/3.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/4.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/1.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/2.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/3.png" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="singel-brand">
+                            <img src="~/images/patnarlogo/4.png" alt="Brand">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== BRAND PART ENDS ======-->

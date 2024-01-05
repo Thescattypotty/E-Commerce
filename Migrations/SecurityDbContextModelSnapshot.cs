@@ -26,10 +26,13 @@ namespace ECommerce.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Address")
+                    b.Property<string>("Adress")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("Birthday")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("City")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -71,6 +74,9 @@ namespace ECommerce.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("INTEGER");
+
+                    b.Property<byte[]>("ProfileImage")
+                        .HasColumnType("BLOB");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("TEXT");
